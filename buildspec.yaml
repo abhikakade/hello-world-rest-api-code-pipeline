@@ -8,7 +8,7 @@ phases:
     - echo Logging in to Amazon ECR....
     - aws --version
     - TAG="$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | head -c 8)"
-    - IMAGE_URI=${REPOSITORY_URI}:${TAG}
+    - IMAGE_URI=806221050913.dkr.ecr.us-east-1.amazonaws.com/hello-world-rest-api:${TAG}
   build:
     commands:
     - echo Build started on `date`
